@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/jknappen/fc
+# catalog-date 2009-08-26 22:28:30 +0200
+# catalog-license gpl2
+# catalog-version 1.4
 Name:		texlive-fc
 Version:	1.4
 Release:	1
@@ -529,6 +535,7 @@ appears in the ec and lh font bundles.).
 %doc %{_texmfdistdir}/doc/fonts/fc/fctugbot.tex
 %doc %{_texmfdistdir}/doc/fonts/fc/fontdef.fc_old
 %doc %{_texmfdistdir}/doc/fonts/fc/licence.gnu
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -539,3 +546,5 @@ appears in the ec and lh font bundles.).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
