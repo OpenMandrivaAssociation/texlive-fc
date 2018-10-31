@@ -6,7 +6,7 @@
 # catalog-version 1.4
 Name:		texlive-fc
 Version:	1.4
-Release:	11
+Release:	12
 Summary:	Fonts for African languages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/jknappen/fc
