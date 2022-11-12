@@ -1,18 +1,12 @@
-# revision 32796
-# category Package
-# catalog-ctan /fonts/jknappen/fc
-# catalog-date 2012-05-29 13:27:24 +0200
-# catalog-license gpl2
-# catalog-version 1.4
 Name:		texlive-fc
-Version:	1.4
-Release:	12
+Version:	32796
+Release:	1
 Summary:	Fonts for African languages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/jknappen/fc
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fc.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fc.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fc.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fc.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ modest set of glyph specifications. (A similar arrangement
 appears in the ec and lh font bundles.).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -529,7 +523,7 @@ appears in the ec and lh font bundles.).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
