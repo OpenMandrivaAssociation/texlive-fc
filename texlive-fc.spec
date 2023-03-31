@@ -1,6 +1,6 @@
 Name:		texlive-fc
 Version:	32796
-Release:	1
+Release:	2
 Summary:	Fonts for African languages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/jknappen/fc
