@@ -3,7 +3,7 @@ Version:	32796
 Release:	2
 Summary:	Fonts for African languages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/jknappen/fc
+URL:		https://www.ctan.org/tex-archive/fonts/jknappen/fc
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fc.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fc.doc.r%{version}.tar.xz
